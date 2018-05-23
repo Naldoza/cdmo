@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('User.Users');
     }
     public function RequestStatus()
     {
@@ -41,9 +41,9 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
-    public function requests()
+    public function inprocessrequest()
     {
-        return view('requesting');
+        return view('Request.InProcessRequest');
     }
 
     public function head()
