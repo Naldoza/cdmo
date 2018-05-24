@@ -34,7 +34,7 @@
     
 
  <nav class="main-header navbar">
-=======
+
     <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -243,7 +243,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/request')}}" class="nav-link">
+                <a href="{{url('/Request')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Request Form</p>
                 </a>
