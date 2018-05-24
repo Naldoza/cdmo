@@ -8535,11 +8535,14 @@ body,
   margin: 0 auto;
   max-width: 1250px;
 }
-
+.main-header {
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 250px;
+    z-index: 3000;
+  }
 @media (min-width: 768px) {
   .content-wrapper,
-  .main-footer,
-  .main-header {
+  .main-footer {
     transition: margin-left 0.3s ease-in-out;
     margin-left: 250px;
     z-index: 3000;

@@ -3,6 +3,7 @@
  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CDMO</title>
+  <head>
   <!-- Tell the browser to be responsive to screen width
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -29,130 +30,140 @@
 <body class="hold-transition sidebar-mini">
 
 <div class="wrapper">
-
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
+  
+ <!--  <nav class="main-header navbar navbar-expand bg-light navbar-light ">
+  -->   <!-- Left navbar links -->
+    
+
+ <nav class="main-header">
+
+<div id="container">
+       
+  <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{url('/Users')}}" class="nav-link">refresh</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
     </ul>
+        </br>
+        <center><h2>UNIVERSITY OF THE PHILIPPILES</h2></center>
+        <center><h2>Cebu COLLEGE</h2></center>
+        <center><h4>Lahug, Cebu City</h4></center>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fa fa-search"></i>
+        <center><h1>CDMO REPORT / ACTION / JOB REQUEST SLIP</h1></center>   
+        <div class="moroon">
+        </div>
+<div class="font-color2">      
+  <?php
+        date_default_timezone_set('Asia/Manila');
+          echo "<span style='color:black;font-weight:bold;'>Date: </span>". date('F j, Y g:i:a  ');
+  ?> 
+</div>
+
+   
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                   <a class="nav-link btn btn-primary btn-outline-primary btn-lg" href="{{url('/signup')}}" >Home</a>       
+                </li>
+            </ul>
+          </div>
+        &nbsp
+
+        <a class="navbar-brand" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp UNIVERSITY CDMO REQUEST FORM </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
           </button>
+                                                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+      <li class="nav-item active">
+          <fieldset disabled> 
+              <b><label for="CDMO"><div class="font-color2">Control Number:</div></b>
+                    <label for="validationDefault01"><div class="font-color1"></div>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="8000"  required>
+          </fieldset>
+    </li>
+      </nav>
+
+<div class="space">
+ 
+<form>
+      <nav class="navbar navbar-expand-lg">
+      <b><a class="navbar-brand">List</a></b>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn  btn-outline-primary btn-lg" href="{{url('/signup')}}"><b>Action Slip</b></button>
+            <button type="button" class="btn  btn-outline-primary btn-lg" href="{{url('/signup')}}"><b>Report</b></button>
         </div>
+</nav>
+
+<div class="form-row">
+    <div class="col-md-3 mb-3">
+      <b><label for="validationDefault02"><div class="font-color1">Requesting Party</div></label></b>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Subject"  required>
+    </div>
+    
+    <div class="col-md-3 mb-3"> 
+      <b><label for="validationDefault02"><div class="font-color1">Recommended by:</div></label></b>
+         <label for="validationDefault02"><div class="font-color1">(DIV/ OFC HEAD)</div></label>
+       
+       <button type="button" class=" btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Department Head
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{{url('/signup')}}">Action</a>
+            <a class="dropdown-item" href="{{url('/login1')}}">Another action</a>
+              <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="{{url('/request1')}}">Something else here</a>
+            </div>
       </div>
-    </form>
-      
+ </div>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="fa fa-comments-o"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fa fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End-->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fa fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fa fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="fa fa-bell-o"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fa fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fa fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fa fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-            class="fa fa-th-large"></i></a>
-      </li>
-    </ul>
+  <div class="form-row">
+     <div class="col-md-8 mb-3">
+        <input type="text" class="form-control" id="validationDefault03" placeholder="AREA / OFFICE / ROOM" required>
+     </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="col-md-5 mb-3">
+        <b><label for="validationDefault06"><div class="font-color1">Materials Needed</div></label></b>
+            <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="col-md-5 mb-3">
+        <b><label for="validationDefault06"><div class="font-color1">Materials to purchase</div></label></b>
+            <textarea class="form-control" rows="3"></textarea>
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+        <div class="font-color">
+        Agree to terms and conditions
+        </div>  
+    </div>
+  </div>
+</form>
+
+    <div class="btn-design">
+      <a type="submit" button class="btn btn-primary btn-lg" href="{{url('/heads1')}}" id="liquidacion_save" name="liquidacion[save]" onclick="$('request1').attr('target', '');"><div class='font-color1'><b>Submit</b></div></a>       
+    </div>
+</div>
+
+        <script src="{{ url('js/popper.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    </div>
   </nav>
-  <!-- /.navbar -->
-
+</div>
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
