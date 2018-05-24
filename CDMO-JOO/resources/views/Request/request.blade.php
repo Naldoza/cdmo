@@ -29,15 +29,30 @@
 </head>
 <body class="hold-transition sidebar-mini">
 
-<div class="wrapper">
-  <!-- Navbar -->
-  
  <!--  <nav class="main-header navbar navbar-expand bg-light navbar-light ">
   -->   <!-- Left navbar links -->
     
 
  <nav class="main-header navbar">
+=======
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Request Form</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="{{url('/Users')}}">Home</a></li>
+              <li class="breadcrumb-item active">Request</li>
+            </ol>
+          </div><!-- /.col -->
 
+
+        </div><!-- /.row -->
+        
 <div id="container">
        
   <ul class="navbar-nav">
@@ -162,8 +177,16 @@
         <script src="{{ url('js/popper.min.js') }}"></script>
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
     </div>
-  </nav>
-</div>
+
+      </div><!-- /.container-fluid -->
+
+    </div>
+
+
+
+
+
+
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
