@@ -209,7 +209,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/requestform')}}" class="nav-link">
+                <a href="{{url('/Request')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Request Form</p>
                 </a>
