@@ -36,7 +36,7 @@
   -->   <!-- Left navbar links -->
     
 
- <nav class="main-header">
+ <nav class="main-header navbar">
 
 <div id="container">
        
