@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+Route::get('FinishedJob','RequestController@approvedrequest');
 Route::get('Request','RequestController@ggg');
 Route::get('Users','HomeController@index');
 Route::get('ForemanForm','HomeController@Foreman');

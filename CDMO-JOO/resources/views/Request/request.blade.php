@@ -38,7 +38,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{url('/home')}}" class="nav-link">refresh</a>
+        <a href="{{url('/Users')}}" class="nav-link">refresh</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -221,9 +221,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="{{url('/FinishedJob')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>List of Finished Job</p>
+                  <p>List of Approved Request</p>
                 </a>
               </li>
             </ul>

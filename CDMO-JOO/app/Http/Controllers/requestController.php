@@ -11,4 +11,8 @@ class RequestController extends Controller
     {
         return view('Request.request');
     }
+    public function approvedrequest ()
+    {
+        return view('Request.FinishedJob');
+    }
 }

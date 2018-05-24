@@ -36,7 +36,7 @@ to get the desired effect
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{url('/home')}}" class="nav-link">Home</a>
+        <a href="{{url('/Request')}}" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -204,7 +204,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/requestform')}}" class="nav-link ">
+                <a href="{{url('/Request')}}" class="nav-link ">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Request Form</p>
                 </a>
@@ -216,9 +216,9 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link ">
+                <a href="{{url('/FinishedJob')}}" class="nav-link ">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>List of Finished Job</p>
+                  <p>List of Approved Request</p>
                 </a>
               </li>
             </ul>
@@ -256,7 +256,7 @@ to get the desired effect
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Request Form</h1>
+            <h1 class="m-0 text-dark">In Process Requests</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
