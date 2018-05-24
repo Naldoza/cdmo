@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+Route::get('request','requestController@ggg');
 Route::get('Users','HomeController@index');
 Route::get('ForemanForm','HomeController@Foreman');
 Route::get('HeadsForm','HomeController@Engr');
