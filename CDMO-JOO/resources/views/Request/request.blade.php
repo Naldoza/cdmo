@@ -33,27 +33,12 @@
   -->   <!-- Left navbar links -->
     
 
- <nav class="main-header navbar">
-
-    <div class="content-wrapper">
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Request Form</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{url('/Users')}}">Home</a></li>
-              <li class="breadcrumb-item active">Request</li>
-            </ol>
-          </div><!-- /.col -->
-
-
-        </div><!-- /.row -->
         
-<div id="container">
+        <div id="container">
        
   <ul class="navbar-nav">
       <li class="nav-item">
@@ -64,10 +49,8 @@
         <center><h2>UNIVERSITY OF THE PHILIPPILES</h2></center>
         <center><h2>Cebu COLLEGE</h2></center>
         <center><h4>Lahug, Cebu City</h4></center>
-
         <center><h1>CDMO REPORT / ACTION / JOB REQUEST SLIP</h1></center>   
-        <div class="moroon">
-        </div>
+
 <div class="font-color2">      
   <?php
         date_default_timezone_set('Asia/Manila');
@@ -75,72 +58,55 @@
   ?> 
 </div>
 
-   
+<br>
+    
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-      </button>
-
+          <a class="navbar-brand" href="#">
+    <img src="dist/img/up_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    CDMO
+  </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                   <a class="nav-link btn btn-primary btn-outline-primary btn-lg" href="{{url('/signup')}}" >Home</a>       
+                   <a class="nav-link btn btn-primary btn-outline-primary btn-sm" href="{{url('/signup')}}" >Home</a>       
                 </li>
             </ul>
           </div>
-        &nbsp
 
-        <a class="navbar-brand" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp UNIVERSITY CDMO REQUEST FORM </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-                                                                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-      <li class="nav-item active">
+    
+                                                                          
+      <li class="nav-item">
           <fieldset disabled> 
               <b><label for="CDMO"><div class="font-color2">Control Number:</div></b>
                     <label for="validationDefault01"><div class="font-color1"></div>
-                        <input type="text" class="form-control" id="validationDefault01" placeholder="8000"  required>
+                        <input type="text" class="form-control" id="validationDefault01"  required>
           </fieldset>
     </li>
+  
       </nav>
+</div>
 
+<br><br>
 <div class="space">
  
 <form>
-      <nav class="navbar navbar-expand-lg">
-      <b><a class="navbar-brand">List</a></b>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn  btn-outline-primary btn-lg" href="{{url('/signup')}}"><b>Action Slip</b></button>
-            <button type="button" class="btn  btn-outline-primary btn-lg" href="{{url('/signup')}}"><b>Report</b></button>
-        </div>
-</nav>
-
+     
 <div class="form-row">
     <div class="col-md-3 mb-3">
-      <b><label for="validationDefault02"><div class="font-color1">Requesting Party</div></label></b>
+      <b><label for="validationDefault02"><div class="font-color1">Subject</div></label></b>
       <input type="text" class="form-control" id="validationDefault02" placeholder="Subject"  required>
     </div>
     
-    <div class="col-md-3 mb-3"> 
-      <b><label for="validationDefault02"><div class="font-color1">Recommended by:</div></label></b>
-         <label for="validationDefault02"><div class="font-color1">(DIV/ OFC HEAD)</div></label>
-       
-       <button type="button" class=" btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Department Head
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="{{url('/signup')}}">Action</a>
-            <a class="dropdown-item" href="{{url('/login1')}}">Another action</a>
-              <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="{{url('/request1')}}">Something else here</a>
-            </div>
-      </div>
+    <div class="col-md-2 mb-3">
+      <b><label for="validationDefault02"><div class="font-color1">Department Head</div></label></b>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Name of Department Head"  required>
+    </div>
  </div>
 
   <div class="form-row">
      <div class="col-md-8 mb-3">
+      <b><label for="validationDefault02"><div class="font-color1">Requesting Party</div></label></b>
         <input type="text" class="form-control" id="validationDefault03" placeholder="AREA / OFFICE / ROOM" required>
      </div>
   </div>
@@ -173,18 +139,10 @@
       <a type="submit" button class="btn btn-primary btn-lg" href="{{url('/heads1')}}" id="liquidacion_save" name="liquidacion[save]" onclick="$('request1').attr('target', '');"><div class='font-color1'><b>Submit</b></div></a>       
     </div>
 </div>
-
-        <script src="{{ url('js/popper.min.js') }}"></script>
-    <script src="{{ url('js/bootstrap.min.js') }}"></script>
-    </div>
-
-      </div><!-- /.container-fluid -->
-
-    </div>
-
-
-
-
+     </div>
+</div>
+</div>
+</div>
 
 
   <!-- Main Sidebar Container -->
@@ -243,7 +201,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/Request')}}" class="nav-link">
+                <a href="{{url('/Request')}}" class="nav-link active">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Request Form</p>
                 </a>
@@ -305,6 +263,10 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+        <script src="{{ url('js/popper.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+
 </body>
 </html> -->
 
